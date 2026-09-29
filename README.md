@@ -108,6 +108,14 @@ modules. The report says which one it used and how it was found. `recvTime` is a
 same fixed timestamp, so the tool never introduces the non-determinism it is looking for in
 check 2.
 
+Two kinds of decoder it cannot run, both stated in `--help`. One written as an ES module
+with a top-level `import` will not load — the sandbox is a CommonJS-ish shim, and `import()`
+inside it is blocked deliberately. And it runs synchronously: a decoder that returns a
+Promise is reported as *returning a Promise*, not awaited, so its result is never checked.
+Timers and network calls are unavailable inside the context by design, so a decoder that
+needs them fails here and says which one it asked for. In all three cases the report names
+what happened rather than silently passing the frame.
+
 ## Tests
 
 ```sh
