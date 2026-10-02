@@ -139,9 +139,10 @@ attribution needed beyond the licence text.
 ## More
 
 The [tool's page](https://plantroomlabs.com/tools/decoder-check/) has real output from a
-sample decoder and the full blind-spot list. Its two siblings are
-[bacnet-sweep](https://github.com/UsamaIqbal0304/bacnet-sweep) and
-[mqtt-tap](https://github.com/UsamaIqbal0304/mqtt-tap).
+sample decoder and the full blind-spot list. Its three siblings are
+[bacnet-sweep](https://github.com/UsamaIqbal0304/bacnet-sweep),
+[mqtt-tap](https://github.com/UsamaIqbal0304/mqtt-tap) and
+[obix-mcp](https://github.com/UsamaIqbal0304/obix-mcp).
 
 Written by [Plantroom Labs](https://plantroomlabs.com) — Niagara Framework engineering:
 modules and drivers, bajaux widgets, PX graphics, station and controller work. Issues and
