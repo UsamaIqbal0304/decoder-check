@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Usama Iqbal (Plantroom Labs)
 /**
  * Run a vendor's LoRaWAN payload decoder and say what a BMS would see.
  *
